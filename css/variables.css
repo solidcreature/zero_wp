@@ -1,0 +1,29 @@
+:root {
+	/* Layout */
+	--content-width: 992px;
+	
+	/* Colors */
+	--c-main: #2D2D2D;
+	--c-secondary: #888888;
+	--c-accent: #FF9800;
+	--c-footer: #111;
+	--c-text: #111;
+	--c-background: #e6e6e6;
+	--c-link: #cc7a00;
+	--c-link-hover: #ffad33;
+	--c-link-visited: #cc7a00;	
+	
+	/* Font Styles */
+	--font-main: 'Arial', sans-serif;
+	--font-secondary: 'Georgia', serif;
+	--size-h1: 42px;
+	--lh-h1: 1.2;
+	--size-h2: 32px;
+	--lh-h2: 1.4;
+	--size-h3: 28px;
+	--lh-h3: 1.4;
+	--size-h4: 22px;
+	--lh-h4: 1.4;
+	--size-text: 18px;
+	--lh-text: 1.4;
+} 
