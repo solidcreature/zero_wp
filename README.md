@@ -1,4 +1,13 @@
-# Zero WP
-Ультра-минималистичная стартовая тема
- 
-Минимальное количество файлов шаблона и кода в functions.php. Корректное подключение style.css. Поддержка title_tg и post_thumbnail. Идеально подходит для переноса готовой статичной верстки на WordPress и нестандартных проектов.
+# Zero WP 3.0
+Ultra-minimal WordPress starter theme. Optimized for converting html-layouts to websites, single page applications, non-standard functionality.
+
+Features
+========
+
+* Based of native WordPress functions and logic
+* Minimal set of theme files
+* Uses JS-fix for screen height on mobile devices
+* Includes Custom Post Types & Custom taxonomies
+* Handy function for static images
+* Selective on/off Gutenberg for different post types
+* Basic SPA example on Front page
