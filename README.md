@@ -1,4 +1,4 @@
-# Zero WP 3.0
+# Zero WP 3.5
 Ultra-minimal WordPress starter theme. Optimized for converting html-layouts to websites, single page applications, non-standard functionality.
 
 Features
@@ -10,4 +10,5 @@ Features
 * Includes Custom Post Types & Custom taxonomies
 * Handy function for static images
 * Selective on/off Gutenberg for different post types
-* Basic SPA example on Front page
+* Basic SPA example with page template
+* Basic AJAX example with page template
