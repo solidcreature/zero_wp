@@ -58,22 +58,22 @@ function theme_register_taxonomy(){
 function theme_register_post_types(){
 
 	$labels = array(
-		'name'               => 'Цитаты', 
-		'singular_name'      => 'Цитата', 
-		'add_new'            => 'Добавить цитату', 
-		'add_new_item'       => 'Добавление цитаты', 
-		'edit_item'          => 'Редактирование цитаты', 
-		'new_item'           => 'Новая цитата', 
-		'view_item'          => 'Смотреть цитату', 
-		'search_items'       => 'Искать цитату', 
-		'not_found'          => 'Не найдено', 
-		'not_found_in_trash' => 'Не найдено в корзине',
+		'name'               => 'Quotes', 
+		'singular_name'      => 'Quote', 
+		'add_new'            => 'Add Quote', 
+		'add_new_item'       => 'Add New Quote', 
+		'edit_item'          => 'Edit Quote', 
+		'new_item'           => 'New Quote', 
+		'view_item'          => 'View Quote', 
+		'search_items'       => 'Search Quotes', 
+		'not_found'          => 'Not Found', 
+		'not_found_in_trash' => 'Not Found in Trash',
 		'parent_item_colon'  => '',
-		'menu_name'          => 'Цитаты',
+		'menu_name'          => 'Quotes',
 	);
 	
 	$args = array(
-		'label'               => 'Цитата',
+		'label'               => 'Quote',
 		'labels' 		      => $labels,
 		'description'         => '',
 		'public'              => true,
@@ -83,7 +83,7 @@ function theme_register_post_types(){
 		'menu_icon'           => 'dashicons-format-quote', //https://developer.wordpress.org/resource/dashicons/
 		'capability_type'     => 'page',
 		'hierarchical'        => false,
-		'supports'            => [ 'title'],
+		'supports'            => ['title'],
 		'taxonomies'          => [],
 		'has_archive'         => false,
 
@@ -105,6 +105,5 @@ function theme_register_post_types(){
 	*/
 	
 	register_post_type( 'quote', $args );
-
 
 }

@@ -8,8 +8,10 @@ add_action( 'after_setup_theme', function(){
 
 //THEME EXTRAS
 //require_once get_template_directory() . '/inc/post-types.php';
+//require_once get_template_directory() . '/inc/spa.php';
+//require_once get_template_directory() . '/inc/ajax.php';
 require_once get_template_directory() . '/inc/theme-image.php';
-require_once get_template_directory() . '/inc/site-data.php';
+
 
 
 //THEME MENUS
@@ -35,22 +37,12 @@ function theme_styles_and_scripts() {
 	wp_enqueue_style( 'css-variables', $css_url . 'variables.css', array(), $ver);
 	wp_enqueue_style( 'css-normalize', $css_url . 'normalize.css', array(), $ver);	
 
-	//Enqueue .js files
-	wp_enqueue_script( 'js-main', $js_url . 'main.js', array('jquery'), $ver);
-	
-	if ( is_home() | is_front_page() ) {
-		$site_data = theme_get_site_data();
-		$ajax_url = admin_url('admin-ajax.php');
-		
-		//Make dynamic data available for main.js
-		wp_localize_script( 'js-main', 'site_data', $site_data);
-		wp_localize_script( 'js-main', 'ajax_url', $ajax_url);
-		
-	}
+	//Enqueue .js files	
+    wp_enqueue_script( 'main-js', $js_url . 'main.js', array('jquery'), $ver);
 }
 
 
-//ENABLING / DISABLING GUTENBERG
+//ENABLING - DISABLING GUTENBERG FOR CERTAIN POST TYPES
 add_filter( 'use_block_editor_for_post_type', 'theme_gutenberg_support_for_post_types', 10, 2 );
 
 function theme_gutenberg_support_for_post_types( $use_block_editor, $post_type ){
